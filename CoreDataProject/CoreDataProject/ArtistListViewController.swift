@@ -78,6 +78,15 @@ class ArtistListViewController: UIViewController, UITableViewDataSource, NSFetch
         cell.detailTextLabel?.text = "Страна: \(artist.country ?? ""), Дата рождения: \(artist.birthDay?.formatted() ?? "")"
         return cell
     }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Логика перехода на другой экран
+    }
+
 
     // MARK: - Actions
     @objc private func addArtist() {
