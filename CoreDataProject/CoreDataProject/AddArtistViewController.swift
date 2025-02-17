@@ -9,14 +9,16 @@ import UIKit
 import CoreData
 import SnapKit
 
-class AddArtistViewController: UIViewController {
+class AddArtistViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Properties
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let artistListVC = ArtistListViewController()
+    public let firstNameTextField = UITextField()
+    public let lastNameTextField = UITextField()
+    public let countryTextField = UITextField()
+    public let birthDayDatePicker = UITextField()
+    public let datePicker = UIDatePicker()
 
-    private let firstNameTextField = UITextField()
-    private let lastNameTextField = UITextField()
-    private let countryTextField = UITextField()
-    private let birthDayDatePicker = UIDatePicker()
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -45,7 +47,10 @@ class AddArtistViewController: UIViewController {
         view.addSubview(countryTextField)
 
         // DatePicker для даты рождения
-        birthDayDatePicker.datePickerMode = .date
+        birthDayDatePicker.keyboardType = .numberPad
+        birthDayDatePicker.placeholder = "дд.мм.гггг"
+        birthDayDatePicker.borderStyle = .roundedRect
+        birthDayDatePicker.delegate = self
         view.addSubview(birthDayDatePicker)
 
         // Кнопка сохранения
@@ -87,7 +92,15 @@ class AddArtistViewController: UIViewController {
         newArtist.firstName = firstNameTextField.text
         newArtist.lastName = lastNameTextField.text
         newArtist.country = countryTextField.text
-        newArtist.birthDay = birthDayDatePicker.date
+        if let dateString = birthDayDatePicker.text {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "dd-MM-yyyy"
+            if let date = formatter.date(from: dateString){
+                newArtist.birthDay = date
+            }else{
+                print("wrong date")
+            }
+        }
 
         do {
             try context.save()
@@ -95,5 +108,33 @@ class AddArtistViewController: UIViewController {
         } catch {
             print("Ошибка при сохранении: \(error)")
         }
+    }
+}
+
+extension AddArtistViewController  {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        // Проверяем, что вводятся только цифры
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        guard allowedCharacters.isSuperset(of: characterSet) else {
+            return false
+        }
+
+        // Текущий текст в UITextField
+        guard let currentText = birthDayDatePicker.text else { return true }
+        let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+
+        // Ограничиваем длину ввода (10 символов для дд.мм.гггг)
+        if newText.count > 10 {
+            return false
+        }
+
+        // Автоматическая вставка разделителей
+        if newText.count == 2 || newText.count == 5 {
+            textField.text = "\(newText)."
+            return false
+        }
+
+        return true
     }
 }

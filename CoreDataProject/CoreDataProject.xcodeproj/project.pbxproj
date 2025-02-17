@@ -16,6 +16,7 @@
 		C780134D2D5F3CDD00E3B293 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C780134C2D5F3CDD00E3B293 /* Base */; };
 		C78013552D5F3E4A00E3B293 /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78013542D5F3E4A00E3B293 /* ArtistListViewController.swift */; };
 		C78013572D5F3EBB00E3B293 /* AddArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78013562D5F3EBB00E3B293 /* AddArtistViewController.swift */; };
+		C78013592D63527C00E3B293 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78013582D63527C00E3B293 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C780134E2D5F3CDD00E3B293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C78013542D5F3E4A00E3B293 /* ArtistListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
 		C78013562D5F3EBB00E3B293 /* AddArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistViewController.swift; sourceTree = "<group>"; };
+		C78013582D63527C00E3B293 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				C78013462D5F3CDC00E3B293 /* CoreDataProject.xcdatamodeld */,
 				C78013542D5F3E4A00E3B293 /* ArtistListViewController.swift */,
 				C78013562D5F3EBB00E3B293 /* AddArtistViewController.swift */,
+				C78013582D63527C00E3B293 /* CustomCell.swift */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				C78013552D5F3E4A00E3B293 /* ArtistListViewController.swift in Sources */,
 				C78013482D5F3CDC00E3B293 /* CoreDataProject.xcdatamodeld in Sources */,
 				C78013402D5F3CDC00E3B293 /* SceneDelegate.swift in Sources */,
+				C78013592D63527C00E3B293 /* CustomCell.swift in Sources */,
 				C78013572D5F3EBB00E3B293 /* AddArtistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KFUD4SUDH;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataProject/Info.plist;
@@ -389,6 +394,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KFUD4SUDH;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataProject/Info.plist;
