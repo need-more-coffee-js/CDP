@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A7A4E39A8E1C48398F24E163 /* Pods_CoreDataProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B19D1E9E65D2059055F5AB7 /* Pods_CoreDataProject.framework */; };
+		C757DFE42D64ECB900A690BA /* ArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DFE32D64ECB900A690BA /* ArtistViewModel.swift */; };
+		C757DFE62D64F20E00A690BA /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DFE52D64F20E00A690BA /* ArtistViewController.swift */; };
+		C757DFE82D64F4EC00A690BA /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757DFE72D64F4EB00A690BA /* ArtistDetailViewController.swift */; };
 		C780133E2D5F3CDC00E3B293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C780133D2D5F3CDC00E3B293 /* AppDelegate.swift */; };
 		C78013402D5F3CDC00E3B293 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C780133F2D5F3CDC00E3B293 /* SceneDelegate.swift */; };
-		C78013422D5F3CDC00E3B293 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78013412D5F3CDC00E3B293 /* ViewController.swift */; };
 		C78013482D5F3CDC00E3B293 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C78013462D5F3CDC00E3B293 /* CoreDataProject.xcdatamodeld */; };
 		C780134A2D5F3CDD00E3B293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C78013492D5F3CDD00E3B293 /* Assets.xcassets */; };
 		C780134D2D5F3CDD00E3B293 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C780134C2D5F3CDD00E3B293 /* Base */; };
-		C78013552D5F3E4A00E3B293 /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78013542D5F3E4A00E3B293 /* ArtistListViewController.swift */; };
-		C78013572D5F3EBB00E3B293 /* AddArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78013562D5F3EBB00E3B293 /* AddArtistViewController.swift */; };
 		C78013592D63527C00E3B293 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78013582D63527C00E3B293 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,16 +23,16 @@
 		1AD9FBC03431E83187760690 /* Pods-CoreDataProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataProject.release.xcconfig"; path = "Target Support Files/Pods-CoreDataProject/Pods-CoreDataProject.release.xcconfig"; sourceTree = "<group>"; };
 		3E19E4FC6CCB98D7416F1268 /* Pods-CoreDataProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataProject.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataProject/Pods-CoreDataProject.debug.xcconfig"; sourceTree = "<group>"; };
 		9B19D1E9E65D2059055F5AB7 /* Pods_CoreDataProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C757DFE32D64ECB900A690BA /* ArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewModel.swift; sourceTree = "<group>"; };
+		C757DFE52D64F20E00A690BA /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		C757DFE72D64F4EB00A690BA /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
 		C780133A2D5F3CDC00E3B293 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C780133D2D5F3CDC00E3B293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C780133F2D5F3CDC00E3B293 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C78013412D5F3CDC00E3B293 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C78013472D5F3CDC00E3B293 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		C78013492D5F3CDD00E3B293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C780134C2D5F3CDD00E3B293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C780134E2D5F3CDD00E3B293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C78013542D5F3E4A00E3B293 /* ArtistListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
-		C78013562D5F3EBB00E3B293 /* AddArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistViewController.swift; sourceTree = "<group>"; };
 		C78013582D63527C00E3B293 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,14 +88,14 @@
 			children = (
 				C780133D2D5F3CDC00E3B293 /* AppDelegate.swift */,
 				C780133F2D5F3CDC00E3B293 /* SceneDelegate.swift */,
-				C78013412D5F3CDC00E3B293 /* ViewController.swift */,
 				C78013492D5F3CDD00E3B293 /* Assets.xcassets */,
 				C780134B2D5F3CDD00E3B293 /* LaunchScreen.storyboard */,
 				C780134E2D5F3CDD00E3B293 /* Info.plist */,
 				C78013462D5F3CDC00E3B293 /* CoreDataProject.xcdatamodeld */,
-				C78013542D5F3E4A00E3B293 /* ArtistListViewController.swift */,
-				C78013562D5F3EBB00E3B293 /* AddArtistViewController.swift */,
 				C78013582D63527C00E3B293 /* CustomCell.swift */,
+				C757DFE32D64ECB900A690BA /* ArtistViewModel.swift */,
+				C757DFE52D64F20E00A690BA /* ArtistViewController.swift */,
+				C757DFE72D64F4EB00A690BA /* ArtistDetailViewController.swift */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
@@ -214,13 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C78013422D5F3CDC00E3B293 /* ViewController.swift in Sources */,
+				C757DFE42D64ECB900A690BA /* ArtistViewModel.swift in Sources */,
 				C780133E2D5F3CDC00E3B293 /* AppDelegate.swift in Sources */,
-				C78013552D5F3E4A00E3B293 /* ArtistListViewController.swift in Sources */,
+				C757DFE82D64F4EC00A690BA /* ArtistDetailViewController.swift in Sources */,
 				C78013482D5F3CDC00E3B293 /* CoreDataProject.xcdatamodeld in Sources */,
 				C78013402D5F3CDC00E3B293 /* SceneDelegate.swift in Sources */,
 				C78013592D63527C00E3B293 /* CustomCell.swift in Sources */,
-				C78013572D5F3EBB00E3B293 /* AddArtistViewController.swift in Sources */,
+				C757DFE62D64F20E00A690BA /* ArtistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
